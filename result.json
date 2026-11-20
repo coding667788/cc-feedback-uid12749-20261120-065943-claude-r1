@@ -1,0 +1,1087 @@
+{
+  "results": [
+    {
+      "index": 0,
+      "op": "create_tenant",
+      "request_id": "r01",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "tenant": "t1"
+        },
+        "op": "create_tenant",
+        "request_id": "r01",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 1,
+      "op": "create_identity",
+      "request_id": "r02",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "i1",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r02",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 2,
+      "op": "create_identity",
+      "request_id": "r03",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "i2",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r03",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 3,
+      "op": "create_identity",
+      "request_id": "r04",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "i3",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r04",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 4,
+      "op": "create_identity",
+      "request_id": "r05",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "i4",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r05",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 5,
+      "op": "create_identity",
+      "request_id": "r06",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "i5",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r06",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 6,
+      "op": "create_credential",
+      "request_id": "r07",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c1",
+          "identity": "i1",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r07",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 7,
+      "op": "create_credential",
+      "request_id": "r08",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c1x",
+          "identity": "i1",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r08",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 8,
+      "op": "create_credential",
+      "request_id": "r09",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c2",
+          "identity": "i2",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r09",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 9,
+      "op": "create_credential",
+      "request_id": "r10",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c3",
+          "identity": "i3",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r10",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 10,
+      "op": "create_credential",
+      "request_id": "r11",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c4",
+          "identity": "i4",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r11",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 11,
+      "op": "create_credential",
+      "request_id": "r12",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c5",
+          "identity": "i5",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r12",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 12,
+      "op": "create_credential",
+      "request_id": "r13",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c5b",
+          "identity": "i5",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r13",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 13,
+      "op": "create_service",
+      "request_id": "r14",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "requirements": {
+            "read": 2,
+            "write": 1
+          }
+        },
+        "op": "create_service",
+        "request_id": "r14",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 14,
+      "op": "bind",
+      "request_id": "r15",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c1"
+        },
+        "op": "bind",
+        "request_id": "r15",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 15,
+      "op": "bind",
+      "request_id": "r16",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c1x"
+        },
+        "op": "bind",
+        "request_id": "r16",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 16,
+      "op": "bind",
+      "request_id": "r17",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c2"
+        },
+        "op": "bind",
+        "request_id": "r17",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 17,
+      "op": "bind",
+      "request_id": "r18",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c3"
+        },
+        "op": "bind",
+        "request_id": "r18",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 18,
+      "op": "bind",
+      "request_id": "r19",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c4"
+        },
+        "op": "bind",
+        "request_id": "r19",
+        "tenant": "t1",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 19,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 10,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i1",
+              "i2",
+              "i3",
+              "i4"
+            ],
+            "count": 4,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i1",
+              "i3"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 10,
+        "valid_until": 100
+      }
+    },
+    {
+      "index": 20,
+      "op": "prepare",
+      "request_id": "r20",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p1",
+          "candidates": [
+            "i1",
+            "i3"
+          ],
+          "deadline": 500
+        },
+        "op": "prepare",
+        "request_id": "r20",
+        "tenant": "t1",
+        "now": 20
+      },
+      "replay": false
+    },
+    {
+      "index": 21,
+      "op": "finalize",
+      "request_id": "r21",
+      "status": "FAILED",
+      "error": "COVERAGE_INSUFFICIENT",
+      "receipt": {
+        "status": "FAILED",
+        "error": "COVERAGE_INSUFFICIENT",
+        "detail": {
+          "checked_at": 21,
+          "services": {
+            "svc": {
+              "write": {
+                "required": 1,
+                "count": 0,
+                "qualified": []
+              }
+            }
+          }
+        },
+        "op": "finalize",
+        "request_id": "r21",
+        "tenant": "t1",
+        "now": 21
+      },
+      "replay": false
+    },
+    {
+      "index": 22,
+      "op": "finalize",
+      "request_id": "r21",
+      "status": "FAILED",
+      "error": "COVERAGE_INSUFFICIENT",
+      "receipt": {
+        "detail": {
+          "checked_at": 21,
+          "services": {
+            "svc": {
+              "write": {
+                "count": 0,
+                "qualified": [],
+                "required": 1
+              }
+            }
+          }
+        },
+        "error": "COVERAGE_INSUFFICIENT",
+        "now": 21,
+        "op": "finalize",
+        "request_id": "r21",
+        "status": "FAILED",
+        "tenant": "t1"
+      },
+      "replay": true
+    },
+    {
+      "index": 23,
+      "op": "cancel",
+      "request_id": "r22",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p1",
+          "reactivated": [
+            "i1",
+            "i3"
+          ],
+          "note": "committed migrations are kept"
+        },
+        "op": "cancel",
+        "request_id": "r22",
+        "tenant": "t1",
+        "now": 22
+      },
+      "replay": false
+    },
+    {
+      "index": 24,
+      "op": "prepare",
+      "request_id": "r23",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p2",
+          "candidates": [
+            "i1"
+          ],
+          "deadline": 500
+        },
+        "op": "prepare",
+        "request_id": "r23",
+        "tenant": "t1",
+        "now": 23
+      },
+      "replay": false
+    },
+    {
+      "index": 25,
+      "op": "migrate",
+      "request_id": "r24",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "moves": [
+            {
+              "service": "svc",
+              "from": "c1",
+              "to": "c5"
+            }
+          ],
+          "checked_services": [
+            "svc"
+          ]
+        },
+        "op": "migrate",
+        "request_id": "r24",
+        "tenant": "t1",
+        "now": 24
+      },
+      "replay": false
+    },
+    {
+      "index": 26,
+      "op": "migrate",
+      "request_id": "r25",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "moves": [
+            {
+              "service": "svc",
+              "from": "c1x",
+              "to": "c5b"
+            }
+          ],
+          "checked_services": [
+            "svc"
+          ]
+        },
+        "op": "migrate",
+        "request_id": "r25",
+        "tenant": "t1",
+        "now": 25
+      },
+      "replay": false
+    },
+    {
+      "index": 27,
+      "op": "finalize",
+      "request_id": "r26",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p2",
+          "retired": [
+            "i1"
+          ],
+          "checked_services": []
+        },
+        "op": "finalize",
+        "request_id": "r26",
+        "tenant": "t1",
+        "now": 30
+      },
+      "replay": false
+    },
+    {
+      "index": 28,
+      "op": "query_identity",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "identity": "i1",
+        "generation": 2,
+        "phase": "RETIRED",
+        "actions": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 30,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i2",
+              "i3",
+              "i4",
+              "i5"
+            ],
+            "count": 4,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i3",
+              "i5"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 30,
+        "valid_until": 100
+      }
+    },
+    {
+      "index": 30,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 99,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i2",
+              "i3",
+              "i4",
+              "i5"
+            ],
+            "count": 4,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i3",
+              "i5"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 99,
+        "valid_until": 100
+      }
+    },
+    {
+      "index": 31,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 100,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i3",
+              "i4",
+              "i5"
+            ],
+            "count": 3,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i3",
+              "i5"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 100,
+        "valid_until": 200
+      }
+    },
+    {
+      "index": 32,
+      "op": "create_credential",
+      "request_id": "r27",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c1old",
+          "identity": "i1",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r27",
+        "tenant": "t1",
+        "now": 31
+      },
+      "replay": false
+    },
+    {
+      "index": 33,
+      "op": "bind",
+      "request_id": "r28",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "service": "svc",
+          "credential": "c1old"
+        },
+        "op": "bind",
+        "request_id": "r28",
+        "tenant": "t1",
+        "now": 31
+      },
+      "replay": false
+    },
+    {
+      "index": 34,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 40,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i2",
+              "i3",
+              "i4",
+              "i5"
+            ],
+            "count": 4,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i3",
+              "i5"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 40,
+        "valid_until": 100
+      }
+    },
+    {
+      "index": 35,
+      "op": "create_identity",
+      "request_id": "r02",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "detail": {
+          "generation": 1,
+          "identity": "i1",
+          "phase": "ACTIVE"
+        },
+        "error": null,
+        "now": 0,
+        "op": "create_identity",
+        "request_id": "r02",
+        "status": "OK",
+        "tenant": "t1"
+      },
+      "replay": true
+    },
+    {
+      "index": 36,
+      "op": "create_identity",
+      "request_id": "r02",
+      "status": "ERROR",
+      "error": "IDEMPOTENCY_CONFLICT",
+      "message": "request_id 'r02' already used with different parameters in tenant 't1'"
+    },
+    {
+      "index": 37,
+      "op": "create_tenant",
+      "request_id": "r29",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "tenant": "t2"
+        },
+        "op": "create_tenant",
+        "request_id": "r29",
+        "tenant": "t2",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 38,
+      "op": "create_identity",
+      "request_id": "r30",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "identity": "j1",
+          "generation": 1,
+          "phase": "ACTIVE"
+        },
+        "op": "create_identity",
+        "request_id": "r30",
+        "tenant": "t2",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 39,
+      "op": "create_credential",
+      "request_id": "r31",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "d1",
+          "identity": "j1",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r31",
+        "tenant": "t2",
+        "now": 0
+      },
+      "replay": false
+    },
+    {
+      "index": 40,
+      "op": "prepare",
+      "request_id": "r32",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p3",
+          "candidates": [
+            "i2"
+          ],
+          "deadline": 500
+        },
+        "op": "prepare",
+        "request_id": "r32",
+        "tenant": "t1",
+        "now": 40
+      },
+      "replay": false
+    },
+    {
+      "index": 41,
+      "op": "migrate",
+      "request_id": "r33",
+      "status": "FAILED",
+      "error": "TENANT_MISMATCH",
+      "receipt": {
+        "status": "FAILED",
+        "error": "TENANT_MISMATCH",
+        "detail": {
+          "credential": "d1",
+          "actual_tenant": "t2"
+        },
+        "op": "migrate",
+        "request_id": "r33",
+        "tenant": "t1",
+        "now": 41
+      },
+      "replay": false
+    },
+    {
+      "index": 42,
+      "op": "create_credential",
+      "request_id": "r34",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "credential": "c6",
+          "identity": "i4",
+          "generation": 1
+        },
+        "op": "create_credential",
+        "request_id": "r34",
+        "tenant": "t1",
+        "now": 42
+      },
+      "replay": false
+    },
+    {
+      "index": 43,
+      "op": "migrate",
+      "request_id": "r35",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "moves": [
+            {
+              "service": "svc",
+              "from": "c2",
+              "to": "c6"
+            }
+          ],
+          "checked_services": [
+            "svc"
+          ]
+        },
+        "op": "migrate",
+        "request_id": "r35",
+        "tenant": "t1",
+        "now": 43
+      },
+      "replay": false
+    },
+    {
+      "index": 44,
+      "op": "finalize",
+      "request_id": "r36",
+      "status": "OK",
+      "error": null,
+      "receipt": {
+        "status": "OK",
+        "error": null,
+        "detail": {
+          "plan_id": "p3",
+          "retired": [
+            "i2"
+          ],
+          "checked_services": []
+        },
+        "op": "finalize",
+        "request_id": "r36",
+        "tenant": "t1",
+        "now": 44
+      },
+      "replay": false
+    },
+    {
+      "index": 45,
+      "op": "query_identity",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "identity": "i2",
+        "generation": 2,
+        "phase": "RETIRED",
+        "actions": [
+          "read"
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "op": "query_coverage",
+      "status": "OK",
+      "error": null,
+      "result": {
+        "service": "svc",
+        "at": 50,
+        "actions": {
+          "read": {
+            "required": 2,
+            "qualified": [
+              "i3",
+              "i4",
+              "i5"
+            ],
+            "count": 3,
+            "ok": true
+          },
+          "write": {
+            "required": 1,
+            "qualified": [
+              "i3",
+              "i5"
+            ],
+            "count": 2,
+            "ok": true
+          }
+        },
+        "ok": true,
+        "valid_from": 50,
+        "valid_until": 200
+      }
+    }
+  ]
+}

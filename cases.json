@@ -1,0 +1,62 @@
+{
+  "db_path": "cases.db",
+  "reset": true,
+  "steps": [
+    {"op": "create_tenant", "request_id": "r01", "tenant": "t1", "now": 0},
+    {"op": "create_identity", "request_id": "r02", "tenant": "t1", "now": 0, "identity": "i1", "actions": ["read", "write"]},
+    {"op": "create_identity", "request_id": "r03", "tenant": "t1", "now": 0, "identity": "i2", "actions": ["read"]},
+    {"op": "create_identity", "request_id": "r04", "tenant": "t1", "now": 0, "identity": "i3", "actions": ["read", "write"]},
+    {"op": "create_identity", "request_id": "r05", "tenant": "t1", "now": 0, "identity": "i4", "actions": ["read"]},
+    {"op": "create_identity", "request_id": "r06", "tenant": "t1", "now": 0, "identity": "i5", "actions": ["read", "write"]},
+    {"op": "create_credential", "request_id": "r07", "tenant": "t1", "now": 0, "credential": "c1", "identity": "i1", "valid_from": 0, "valid_until": 100},
+    {"op": "create_credential", "request_id": "r08", "tenant": "t1", "now": 0, "credential": "c1x", "identity": "i1", "valid_from": 0, "valid_until": 150},
+    {"op": "create_credential", "request_id": "r09", "tenant": "t1", "now": 0, "credential": "c2", "identity": "i2", "valid_from": 0, "valid_until": 100},
+    {"op": "create_credential", "request_id": "r10", "tenant": "t1", "now": 0, "credential": "c3", "identity": "i3", "valid_from": 0, "valid_until": 200},
+    {"op": "create_credential", "request_id": "r11", "tenant": "t1", "now": 0, "credential": "c4", "identity": "i4", "valid_from": 0, "valid_until": 200},
+    {"op": "create_credential", "request_id": "r12", "tenant": "t1", "now": 0, "credential": "c5", "identity": "i5", "valid_from": 0, "valid_until": 300},
+    {"op": "create_credential", "request_id": "r13", "tenant": "t1", "now": 0, "credential": "c5b", "identity": "i5", "valid_from": 0, "valid_until": 300},
+    {"op": "create_service", "request_id": "r14", "tenant": "t1", "now": 0, "service": "svc", "requirements": {"read": 2, "write": 1}},
+    {"op": "bind", "request_id": "r15", "tenant": "t1", "now": 0, "service": "svc", "credential": "c1"},
+    {"op": "bind", "request_id": "r16", "tenant": "t1", "now": 0, "service": "svc", "credential": "c1x"},
+    {"op": "bind", "request_id": "r17", "tenant": "t1", "now": 0, "service": "svc", "credential": "c2"},
+    {"op": "bind", "request_id": "r18", "tenant": "t1", "now": 0, "service": "svc", "credential": "c3"},
+    {"op": "bind", "request_id": "r19", "tenant": "t1", "now": 0, "service": "svc", "credential": "c4"},
+
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 10},
+
+    {"op": "prepare", "request_id": "r20", "tenant": "t1", "now": 20, "plan_id": "p1", "candidates": ["i1", "i3"], "deadline": 500},
+    {"op": "finalize", "request_id": "r21", "tenant": "t1", "now": 21},
+    {"op": "finalize", "request_id": "r21", "tenant": "t1", "now": 21},
+    {"op": "cancel", "request_id": "r22", "tenant": "t1", "now": 22},
+
+    {"op": "prepare", "request_id": "r23", "tenant": "t1", "now": 23, "plan_id": "p2", "candidates": ["i1"], "deadline": 500},
+    {"op": "migrate", "request_id": "r24", "tenant": "t1", "now": 24, "moves": [{"service": "svc", "from": "c1", "to": "c5"}]},
+    {"op": "migrate", "request_id": "r25", "tenant": "t1", "now": 25, "moves": [{"service": "svc", "from": "c1x", "to": "c5b"}]},
+    {"op": "finalize", "request_id": "r26", "tenant": "t1", "now": 30},
+
+    {"op": "query_identity", "tenant": "t1", "identity": "i1"},
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 30},
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 99},
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 100},
+
+    {"op": "create_credential", "request_id": "r27", "tenant": "t1", "now": 31, "credential": "c1old", "identity": "i1", "generation": 1, "valid_from": 0, "valid_until": 1000},
+    {"op": "bind", "request_id": "r28", "tenant": "t1", "now": 31, "service": "svc", "credential": "c1old"},
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 40},
+
+    {"op": "create_identity", "request_id": "r02", "tenant": "t1", "now": 0, "identity": "i1", "actions": ["read", "write"]},
+    {"op": "create_identity", "request_id": "r02", "tenant": "t1", "now": 0, "identity": "i1", "actions": ["read"]},
+
+    {"op": "create_tenant", "request_id": "r29", "tenant": "t2", "now": 0},
+    {"op": "create_identity", "request_id": "r30", "tenant": "t2", "now": 0, "identity": "j1", "actions": ["read"]},
+    {"op": "create_credential", "request_id": "r31", "tenant": "t2", "now": 0, "credential": "d1", "identity": "j1", "valid_from": 0, "valid_until": 500},
+
+    {"op": "prepare", "request_id": "r32", "tenant": "t1", "now": 40, "plan_id": "p3", "candidates": ["i2"], "deadline": 500},
+    {"op": "migrate", "request_id": "r33", "tenant": "t1", "now": 41, "moves": [{"service": "svc", "from": "c2", "to": "d1"}]},
+    {"op": "create_credential", "request_id": "r34", "tenant": "t1", "now": 42, "credential": "c6", "identity": "i4", "valid_from": 0, "valid_until": 300},
+    {"op": "migrate", "request_id": "r35", "tenant": "t1", "now": 43, "moves": [{"service": "svc", "from": "c2", "to": "c6"}]},
+    {"op": "finalize", "request_id": "r36", "tenant": "t1", "now": 44},
+
+    {"op": "query_identity", "tenant": "t1", "identity": "i2"},
+    {"op": "query_coverage", "tenant": "t1", "service": "svc", "at": 50}
+  ]
+}
